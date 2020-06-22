@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <%= require("../partials/header.ejs")() %>
+            <section>
+                <p>修改後上傳</p>
+                <p>for github desktop</p>
+                <p>++</p>
+                <img class="police" src="<%= require("../img/atm-warn.png") %>" alt="">
+                <div class="icon">
+                    <i class="icon icon-bird1"></i>
+                    <i class="icon icon-bird2"></i>
+                    <i class="icon icon-bird3"></i>
+                    <i class="icon icon-bird4"></i>
+                    <i class="icon icon-bird5"></i>
+                    <i class="icon icon-bird6"></i>
+                </div>
+            </section>
+            <%= require("../partials/footer.ejs")() %>
+        </div>
+    </div>
+</body>
+
+</html>

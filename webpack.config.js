@@ -3,7 +3,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const SpritesmithPlugin = require('webpack-spritesmith');
 const webpack = require('webpack');
-const uglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -24,13 +23,18 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'html', 'index.html'),
-            filename: path.resolve(__dirname, 'dist', 'index.html'),
+            filename: path.resolve(__dirname, 'index.html'),
             title: "Home"
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'html', 'about.html'),
             filename: path.resolve(__dirname, 'dist', 'about.html'),
             title: "About"
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'html', 'todolist.html'),
+            filename: path.resolve(__dirname, 'dist', 'todolist.html'),
+            title: "Todolist"
         }),
         new SpritesmithPlugin({
             src: {

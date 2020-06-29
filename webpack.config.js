@@ -36,6 +36,11 @@ module.exports = {
             filename: path.resolve(__dirname, 'dist', 'todolist.html'),
             title: "Todolist"
         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'html', 'week2.html'),
+            filename: path.resolve(__dirname, 'dist', 'week2.html'),
+            title: "week2"
+        }),
         new SpritesmithPlugin({
             src: {
                 cwd: path.resolve(__dirname, 'src', 'icon'),

@@ -1,7 +1,9 @@
 import "./css/index.scss";
 import "./sprite/sprite.css";
 import "./css/todolist.scss";
+import "./css/week2.scss";
 import "./js/todolist";
+import "./js/week2";
 
 // console.log('hello webpack');
 

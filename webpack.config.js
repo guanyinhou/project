@@ -39,7 +39,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'html', 'week2.html'),
             filename: path.resolve(__dirname, 'dist', 'week2.html'),
-            title: "week2"
+            title: "Week2"
         }),
         new SpritesmithPlugin({
             src: {

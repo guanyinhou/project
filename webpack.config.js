@@ -41,6 +41,11 @@ module.exports = {
             filename: path.resolve(__dirname, 'dist', 'week2.html'),
             title: "Week2"
         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src', 'html', 'week3_backend.html'),
+            filename: path.resolve(__dirname, 'dist', 'week3_backend.html'),
+            title: "Week3_backend"
+        }),
         new SpritesmithPlugin({
             src: {
                 cwd: path.resolve(__dirname, 'src', 'icon'),
@@ -56,7 +61,8 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
-            'window.jQuery': 'jquery'
+            'window.jQuery': 'jquery',
+            'axios': 'axios'
         }),
         new UglifyJsPlugin(),
         new CompressionPlugin(),

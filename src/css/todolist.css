@@ -1,0 +1,98 @@
+.todolist * {
+  font-family: microsoft jhenghei;
+}
+
+.todolist h1 {
+  color: #000;
+}
+
+.todolist #app {
+  margin-top: 150px;
+}
+
+.todolist .text-center {
+  text-align: center;
+}
+
+.todolist .input-area {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  float: left;
+  width: 100%;
+}
+
+.todolist .input-title {
+  width: 100px;
+  text-align: center;
+  background-color: #ddd;
+  line-height: 40px;
+  float: left;
+}
+
+.todolist .input-here {
+  width: calc(100% - 150px);
+  border: 0;
+  line-height: 40px;
+  float: left;
+  height: 40px;
+  padding: 0 15px;
+}
+
+.todolist .input-sub {
+  float: right;
+  width: 50px;
+  height: 40px;
+}
+
+.todolist .clearfix {
+  clear: both;
+}
+
+.todolist .note-area {
+  float: left;
+  width: 100%;
+}
+
+.todolist .note-total {
+  float: left;
+}
+
+.todolist .clear-all {
+  float: right;
+}
+
+.todolist .clear-all a {
+  text-decoration: none;
+}
+
+.todolist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todolist li {
+  line-height: 50px;
+  overflow: hidden;
+  padding: 0 15px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.todolist li:last-of-type {
+  border-bottom: 0;
+}
+
+.todolist li label {
+  line-height: 50px;
+  float: left;
+}
+
+.todolist li .del {
+  float: right;
+  margin-top: 12px;
+}
+
+.todolist .todo-list input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=todolist.css.map */

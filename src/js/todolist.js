@@ -6,14 +6,14 @@ window.onload = function () {
     var totalDOM = document.querySelector('.note-total span');
     var delAll = document.querySelector('.clear-all a');
     const arr = [
-        // {
-        //     purpose: '寫功課',
-        //     finished: false
-        // },
-        // {
-        //     purpose: '準時睡覺',
-        //     finished: true
-        // }
+        {
+            purpose: '寫功課',
+            finished: false
+        },
+        {
+            purpose: '準時睡覺',
+            finished: true
+        }
     ]
     render();
     delAll.addEventListener('click', arrEmpty);

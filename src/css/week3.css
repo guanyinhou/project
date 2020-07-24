@@ -120,10 +120,6 @@
   padding: 5px 10px;
 }
 
-* #app .container .modal .modal-body .ckbox label {
-  display: inline-block;
-}
-
 * #app .container .modal .modal-footer {
   border-top: 1px solid #ddd;
   padding: 20px;
